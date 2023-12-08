@@ -1,0 +1,38 @@
+/* RESPONSIVE */
+@media (min-width: 320px) and (max-width: 768px) {
+	header .logo {
+	    width: 200px;
+	}
+	#menu ul li a {
+		font-size: 15px;
+	}
+	#slider {
+		height: 125px;
+	}
+	#herotext h1{
+	    font-size: 29px;
+	}
+	#artikel {
+		float: none;
+		width: 100%;
+	}
+	#artikel figure {
+		width: 100%;
+	}
+	#sidebar {
+		float: none;
+		width: 100%;
+		padding-left: 0;
+	}
+}
+@media (min-width: 320px) and (max-width: 425px) {
+	header .logo {
+	    width: 150px;
+	    margin: -15px auto 5px;
+	    display: block;
+	}
+	#artikel figure img {
+		width: 100%;
+		height: inherit;
+	}
+}

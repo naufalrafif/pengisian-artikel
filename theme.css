@@ -1,0 +1,360 @@
+/* GLOBAL */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	color: #878787;
+	font-weight: 100;
+} 
+header {
+	padding: 34px 50px 15px;
+}
+h1.judul {
+	font-family: 'Roboto', sans-serif;
+	font-size: 32px;
+	font-weight: 600;
+	color: #3b5998;
+	text-transform: uppercase;
+}
+h3.judul {
+	font-family: 'Roboto', sans-serif;
+	font-size: 28px;
+	color: #00afab;
+	text-transform: capitalize;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* MENU */
+.menu ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 35px;
+    overflow: hidden;
+	background-color: #3c4542;
+}
+.menu ul li {
+	float: left;
+}
+.menu ul li a {
+	padding: 15px;
+	font-size: 21px;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+}
+.menu ul li a:hover {
+	color: #00afab;
+}
+.menu ul li.active a {
+	color: #00afab;
+}
+
+/* SLIDER */
+#slider {
+	background: url(images/slider.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 454px;
+}
+
+/* HERO TEXT */
+#herotext {
+	text-align: center;
+	padding: 22px;
+}
+#herotext h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 41px;
+}
+#herotext h3 {
+	color: #878787;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+/* CONTENT */
+#artikel {
+	float: left;
+	width: 70%;
+	font-size: 17px;
+}
+#sidebar {
+	float: left;
+	width: 25%;
+}
+#artikel h2.judul {
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	font-weight: 100;
+}
+#artikel figure {
+	float: left;
+    margin: 0 20px 30px 0;
+}
+#artikel .isi-artikel p {
+	line-height: 25px;
+}
+
+/* SIDEBAR */
+#sidebar {
+	padding-left: 50px;
+	margin-top: 10px;
+}
+#sidebar .item {
+	font-size: 17px;
+	line-height: 25px;
+	margin-bottom: 40px;
+}
+#sidebar .item h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	font-weight: 100;
+}
+#sidebar .item p.description {
+	margin-bottom: 50px;
+}
+#sidebar .item a.readmore {
+	background: #00afab;
+	padding: 12px 40px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#sidebar .item a.readmore:hover {
+	background: #036f6d;
+}
+/* TABLE */
+ table {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  table tr {
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+
+  table th, table td {
+    padding: 10px;
+    text-align: center;
+    width: 1px;
+  }
+
+  table th {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: #3b5998;
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    table {
+      border: 0;
+    }
+
+    table thead {
+      display: none;
+    }
+
+    table tr {
+      margin-bottom: 10px;
+      display: block;
+      border-bottom: 2px solid #ddd;
+    }
+
+    table td {
+      display: block;
+      text-align: right;
+      font-size: 13px;
+      border-bottom: 1px dotted #ccc;
+    }
+
+    table td:last-child {
+      border-bottom: 0;
+    }
+
+    table td:before {
+      content: attr(data-label);
+      float: left;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+
+ /* BUTTON */
+ .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+ .btn-default {
+ 	color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+/* MODAL */
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 50%;
+    height: 70%;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 20px 60px;
+    border-radius: 10px;
+    background: #fff;
+}
+#form-edit {
+	margin-bottom: 30px;
+}
+#form-edit .form-row {
+	margin-bottom: 15px;
+}
+#form-edit label {
+	display: block;
+}
+#form-edit input,
+#form-edit textarea {
+	padding: 10px 12px;
+	width: 100%;
+}
+#form-edit textarea {
+	height: 60px;
+}
+#form-edit button {
+	border: none;
+	background: #00afab;
+	padding: 12px 40px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 17px;
+}
+#form-edit .cancel {
+	border: none;
+	background: #d9534f;
+	padding: 12px 40px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 17px;
+}
+#form-edit a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+    background: #00d9ff;
+}
+
+/* FOOTER */
+#footer {
+	clear: both;
+	background: #ffffff;
+	text-align: center;
+	color: #878787;
+	font-size: 15px;
+	padding: 5px;
+}
+#footer .title {
+	font-size: 22px;
+	font-weight: 100;
+	margin-top: 0;
+}
+#footer .copyright {
+	font-size: 13px;
+	margin-top: 70px;
+}
+
+/* CONTACT */
+#form-contact {
+	margin-bottom: 30px;
+}
+#form-contact .form-row {
+	margin-bottom: 15px;
+}
+#form-contact label {
+	display: block;
+}
+#form-contact input,
+#form-contact textarea {
+	padding: 10px 12px;
+	width: 30%;
+}
+#form-contact textarea {
+	height: 60px;
+}
+#form-contact button {
+	border: none;
+	background: #00afab;
+	padding: 12px 40px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 17px;
+}
